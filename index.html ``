@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケートに転送しています</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const forms = [
+      "https://forms.cloud.microsoft/r/DcdjAEjaR4?origin=lprLink",
+      "https://forms.cloud.microsoft/r/wjTqAuZZ4w?origin=lprLink",
+      "https://forms.cloud.microsoft/r/W1u8ndWTVw?origin=lprLink"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * forms.length);
+
+    // 300ms後に遷移（スマホ安定化）
+    setTimeout(() => {
+      location.href = forms[randomIndex];
+    }, 300);
+  </script>
+</head>
+<body>
+  <p style="font-size:18px;">アンケートに転送しています…</p>
+</body>
+</html>
